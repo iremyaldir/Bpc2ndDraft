@@ -1,0 +1,11 @@
+﻿@using BPC.Data;
+@model Book
+<div class="row">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">@Model.Name</h5>
+            <p class="card-text">@Model.Price TL</p>
+            <a asp-controller="Book" asp-action ="Details" asp-route-id="@Model.Id" class="btn btn-primary">Buy Now</a>
+        </div>
+    </div> 
+</div>
